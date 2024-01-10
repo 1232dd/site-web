@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="../CSS/styleproj.css" />
+        <title>Dan Brown</title>
+    </head>
+    
+    <body>
+        <div id="bloc_page">
+            <header>
+                <div id="titre_principal">
+                    <div id="logo">
+                        <img src="../medias/dan brown.jpg" alt="les livres de Dan Brown" />
+                        <h1>Dan Brown</h1>    
+                    </div>
+                    <h2>L'écrivain du siècle</h2>
+                </div>
+                
+                <nav>
+                    <ul>
+                        <li><a href="../HTML/biographie.html">Biographie</a></li>
+                        <li><a href="../HTML/realisations.html">Réalisations</a></li>
+                        <li><a href="../HTML/livres.html">Livres</a></li>
+                        <li><a href="../HTML/medias.html">Medias</a></li>
+                        <li><a href="../HTML/nouvelles.html">Nouvelles</a></li>
+                    </ul>
+                </nav>
+            </header>
+            
+            <div id="banniere_image">
+                <div id="banniere_description">
+                    Pourquoi changer le monde, si le monde ne regarde pas ?
+                    Dan Brown ,
+                    Anges et Démons (2000)
+                    <a href="https://www.babelio.com/auteur/Dan-Brown/4394/citations" class="bouton_rouge">Voir plus </a>
+                </div>
+            </div>
+            <div id="mon Compte">
+                <section>
+                <body onload="remplir()">
+                    <div id="body1">
+                
+                    <article>
+                        <h1>veuillez saisir vs coordonnee dans le formulaire ci dessous pour envoyer un message a Dan Brown</h1>
+                     
+                        <div id="form">
+                            <form>
+                            <div class="a">
+                              <div class="description">
+                                <label for="fname">Nom</label>
+                              </div>
+                              <div class="remplissage">
+                                <input type="text" id="fname" name="firstname" placeholder="Votre Nom" required>
+                              </div>
+                            </div>
+                            <div class="a">
+                              <div class="description">
+                                <label for="lname">Prenom</label>
+                              </div>
+                              <div class="remplissage">
+                                <input type="text" id="lname" name="lastname" placeholder="Votre Prenom" required>
+                              </div>
+                            </div>
+                            <div class="a">
+                              <div class="description">
+                                <label for="naissance">Birthday:</label>
+                              </div>
+                              <div class="remplissage">
+                                <input type="date" id="naissance" name="naissance">
+                              </div>
+                            </div>
+                            <div class="a">
+                                <div class="description">
+                                  <label for="email">Email</label>
+                                </div>
+                                <div class="remplissage">
+                                  <input type="email" id="email" name="Email" placeholder="Email@gmail.com" required>
+                                </div>
+                              </div>
+                            <div class="a">
+                              <div class="description">
+                                <label for="country">Pays</label>
+                              </div>
+                              <div class="remplissage">
+                                <select id="country" name="country">
+                                  <option value="France">France</option>
+                                  <option value="Espagne">Espagne</option>
+                                  <option value="Angleterre">Angleterre</option>
+                                  <option value="Maroc">Maroc</option>
+                                </select>
+                              </div>
+                            </div>
+                            <div class="a">
+                              <div class="description">
+                                <label for="message">Commentaires</label>
+                              </div>
+                              <div class="remplissage">
+                                <textarea id="message" name="message" placeholder="Ecrire votre commentaires.."></textarea>
+                              </div>
+                            </div>
+                            <div class="a">
+                                <input class="acheter" type="button" onclick="window.location.href='mailto://webmaster@danbrown.com';" value="Cliquez ici"></input>                              <button id="m2" type="button" onclick="history.go(0)">Initialiser</button>
+                            </div>
+                            </form>
+                          </div>
+                        
+                        
+                        </select>
+                    </article>
+                </section>
+                <div>
+                  <button id="b" type="button" onclick="date()">Afficher la Date</button>
+                   <p id="date">
+  
+                  </p>
+  
+                 </div>
+            </div>
+        </div>
+        <script type="text/javascript " src="../javascript/compte"></script>
+    </body>
+</html>
